@@ -1,0 +1,57 @@
+.main-title {
+    font-weight: bolder;
+    font-size: 4rem;
+    font-style: "Great Vibes", cursive;
+    padding-top: 2rem;
+}
+
+.main-title-con {
+    height: 5rem;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.screen-break {
+    width: 100%;
+    border-bottom: black 1px solid;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#passwordNote {
+    color: rgb(180, 180, 30);
+    font-size: 60%;
+}
+
+.form-holder {
+    margin-top: 0.5rem;
+}
+
+input.ng-invalid.ng-dirty.ng-touched {
+    border: 2.5px red solid;
+}
+
+.login-con {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("src\assets\login_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 99vh;
+    color: white;
+}
+
+.login-btn {
+    color: #fff;
+    background-color: #15384e;
+    border-color: #15384e;
+    display: block;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.5rem;
+}
+
+.login-btn:hover {
+    width: 75%;
+}

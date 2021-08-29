@@ -1,0 +1,15 @@
+<div class="container border-bottom border-dark">
+    <div class="row">
+        <div class="col-md-10 ">
+            <span class="header"> {{title}} <i class="bi bi-award-fill pl-2"></i> </span>
+        </div>
+        <!-- Dunder Mifflin Student Dashboard -->
+        <div class="col-md-2" *ngIf="logout == true">
+
+            <button (click)="onLogout()" type="button" class="btn btn-warning mt-2">Logout</button>
+        </div>
+
+    </div>
+
+
+</div>

@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@font-face {
+    font-family: "Great Vibes";
+    src: local("Great Vibes"), url("./assets/GreatVibes-Regular.ttf") format("truetype");
+}
+
+
+/* used to add color to the table  */
+
+.table .thead-dark th {
+    color: #fff;
+    background-color: #15384e;
+    border-color: #09161f;
+}
+
+.main-class {
+    /* border: red solid 2px; */
+    min-height: 95vh;
+}
+
+.hover-hand:hover {
+    cursor: pointer;
+}
+
+.btn-back {
+    padding-left: 0px;
+}

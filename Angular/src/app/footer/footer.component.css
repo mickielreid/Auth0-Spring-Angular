@@ -1,0 +1,20 @@
+div {
+    /* border-top: 1px black solid; */
+    text-align: center;
+    font-size: 0.8rem;
+    padding-top: 10px;
+    /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("src\assets\login_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    background-color: #15384e;
+    color: white;
+}
+
+
+/* footer {
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+} */

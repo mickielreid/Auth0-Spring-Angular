@@ -1,0 +1,44 @@
+<div class="main-class">
+
+
+    <app-header title="Dunder Mifflin Admin Dashboard"></app-header>
+
+    <div class="container mt-3 btn-create">
+        <button (click)="onCreatestudent()" type="button" class="btn btn-success ">Create User</button>
+    </div>
+
+
+    <ngb-alert class="my-3" #updateAlert *ngIf="updateMessage" type="success" (closed)="updateMessage = ''">
+        {{ updateMessage }}
+    </ngb-alert>
+
+    <div class="table-holder mt-5 mx-3">
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col" sortable="firstName" (sort)="onSort($event)" class="hover-hand">First Name <i class="bi bi-arrows-expand pl-2"></i></th>
+                    <th scope="col" sortable="lastName" (sort)="onSort($event)" class="hover-hand">Last Name <i class="bi bi-arrows-expand pl-2"></i></th>
+                    <th scope="col" sortable="homeCity" (sort)="onSort($event)" class="hover-hand">Home City <i class="bi bi-arrows-expand pl-2"></i></th>
+                    <th scope="col" sortable="status" (sort)="onSort($event)" class="hover-hand">Status <i class="bi bi-arrows-expand pl-2"></i></th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <!-- scope="row" -->
+            <tbody>
+                <tr *ngFor="let student of students; index as i">
+                    <th scope="row">{{i +1}}</th>
+                    <td>{{ student.firstName }}</td>
+                    <td>{{ student.lastName }}</td>
+                    <td>{{ student.homeCity }}</td>
+                    <td>{{ student.status }}</td>
+                    <td class="hover-hand clickable edit" (click)="updateStudentHelper(student)"> <i class="bi bi-pencil-fill"></i> </td>
+                    <td class="hover-hand clickable text-danger" (click)="deleteStudent(student.id)"><i class="bi bi-trash-fill"></i> </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</div>

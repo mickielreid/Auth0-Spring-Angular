@@ -1,0 +1,20 @@
+.clickable:hover {
+    transform: scale(0.9, 0.9);
+    -webkit-transform: scale(0.9, 0.9);
+    -moz-transform: scale(0.9, 0.9);
+    -ms-transform: scale(0.9, 0.9);
+    -o-transform: scale(0.9, 0.9);
+}
+
+.edit {
+    color: rgb(214, 158, 54);
+}
+
+.btn-create {
+    padding-left: 0px;
+}
+
+.btn-create button {
+    font-weight: bold;
+    background-color: #089b18 !important;
+}

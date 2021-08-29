@@ -1,0 +1,79 @@
+<div class="main-class">
+    <app-header title="{{headerTitle}}"></app-header>
+
+    <div class="container mt-3 btn-back">
+        <button routerLink="/admin" type="button" class="btn btn-danger ">Back</button>
+    </div>
+
+
+    <div class="form-holder mt-3 mx-5">
+        <form [formGroup]="studentFormGroup" class="form-holder" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="firstName">Firstname</label>
+                <input id="firstName" type="text" formControlName="firstName" class="form-control" placeholder="Enter a FirstName">
+
+
+                <div *ngIf="studentFormGroup.invalid && (studentFormGroup.dirty || studentFormGroup.touched)">
+                    <div *ngIf="studentFormGroup.controls.firstName.errors" class="invalid-feedback d-block">
+                        Please enter a First Name
+                    </div>
+                </div>
+
+            </div>
+            <!-- end -->
+
+            <div class="form-group">
+                <label for="lastName">Lirstname</label>
+                <input id="lastName" type="text" formControlName="lastName" class="form-control" placeholder="Enter a Last Name">
+
+
+                <div *ngIf="studentFormGroup.invalid && (studentFormGroup.dirty || studentFormGroup.touched)">
+                    <div *ngIf="studentFormGroup.controls.lastName.errors" class="invalid-feedback d-block">
+                        Please enter a Last Name
+                    </div>
+                </div>
+
+            </div>
+            <!-- end -->
+
+            <div class="form-group">
+                <label for="homeCity">Home City</label>
+                <input id="homeCity" type="text" formControlName="homeCity" class="form-control" placeholder="Enter a Home City">
+
+
+                <div *ngIf="studentFormGroup.invalid && (studentFormGroup.dirty || studentFormGroup.touched)">
+                    <div *ngIf="studentFormGroup.controls.homeCity.errors" class="invalid-feedback d-block">
+                        Please enter a Last Name
+                    </div>
+                </div>
+
+            </div>
+            <!-- end -->
+
+            <div class="form-group">
+                <label for="status">Status</label>
+                <!-- <input id="status" type="text" formControlName="status" class="form-control" placeholder="Enter a Status"> -->
+
+                <select class="form-control" formControlName="status" id="status" name="status">
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="active" selected="selected">Active</option>
+                    <option value="suspended">Suspended</option>
+                    <option value="expelled">Expelled</option>
+                    <option value="graduated">Graduated</option>
+                </select>
+
+                <div *ngIf="studentFormGroup.invalid && (studentFormGroup.dirty || studentFormGroup.touched)">
+                    <div *ngIf="studentFormGroup.controls.status.errors" class="invalid-feedback d-block">
+                        Please enter a Status
+                    </div>
+                </div>
+
+            </div>
+            <!-- end -->
+
+
+            <button [disabled]="!studentFormGroup.valid" type="submit" class="btn action-btn mb-4">  {{ isUpdate ? "Update Student" : "Create New Student" }}  </button>
+        </form>
+
+    </div>
+</div>

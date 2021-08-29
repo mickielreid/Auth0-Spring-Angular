@@ -1,0 +1,31 @@
+<div class="main-class">
+
+
+    <app-header title="Dunder Mifflin Student Dashboard"></app-header>
+
+    <div class="table-holder mt-5 mx-3">
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col" sortable="firstName" (sort)="onSort($event)" class="hover-hand">First Name <i class="bi bi-arrows-expand pl-2"></i></th>
+                    <th scope="col" sortable="lastName" (sort)="onSort($event)" class="hover-hand">Last Name <i class="bi bi-arrows-expand pl-2"></i></th>
+                    <th scope="col" sortable="homeCity" (sort)="onSort($event)" class="hover-hand">Home City <i class="bi bi-arrows-expand pl-2"></i></th>
+                    <th scope="col" sortable="status" (sort)="onSort($event)" class="hover-hand">Status <i class="bi bi-arrows-expand pl-2"></i></th>
+                </tr>
+            </thead>
+            <!-- scope="row" -->
+            <tbody>
+                <tr *ngFor="let student of students; index as i">
+                    <th scope="row">{{i +1}}</th>
+                    <td>{{ student.firstName }}</td>
+                    <td>{{ student.lastName }}</td>
+                    <td>{{ student.homeCity }}</td>
+                    <td>{{ student.status }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</div>

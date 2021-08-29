@@ -1,0 +1,18 @@
+.action-btn {
+    color: #fff;
+    background-color: #15384e;
+    border-color: #15384e;
+    display: block;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.5rem;
+}
+
+.action-btn:hover {
+    width: 75%;
+}
+
+input.ng-invalid.ng-dirty.ng-touched {
+    border: 2.5px red solid;
+}

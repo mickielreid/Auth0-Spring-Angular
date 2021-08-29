@@ -1,0 +1,17 @@
+button {
+    float: right;
+    font-style: "Great Vibes", cursive;
+}
+
+div {
+    text-align: center;
+}
+
+.header {
+    font-weight: bolder;
+    font-size: 2.5rem;
+    font-style: "Great Vibes", cursive;
+    padding-top: 2rem;
+    color: #15384e;
+    border-color: #09161f;
+}

@@ -1,0 +1,18 @@
+default error page
+
+back button from helper --- finsih
+
+finish log out  -- done
+
+loading bar while routing   ------------- http://localhost:4200/
+
+reload or remve after delete or edit --done
+
+add a log out successful page
+
+user1 -- admin
+12345678
+
+
+user2 -- student-clerk
+12345678
